@@ -7,7 +7,8 @@
             "https://img.freepik.com/free-photo/school-classroom-blur-background-without-young-student-blurry-view-elementary-class-room-no-kid-teacher-with-chairs-tables-campus-vintage-effect-style-pictures_1253-1375.jpg?"
             );
 }
-  
+ 
+
 @keyframes idle{
     0%{
         --bordercolor: #53687E;
@@ -37,6 +38,15 @@ b {
     transition: 1s all;
 }
 
+img {
+    max-height: 5vmin;
+    max-width: 5vmin;
+    position: absolute;
+}
+
+.home {
+    border: 0px solid black;
+}
 
 .page-prop {
     background-image: var(--pagebg);
@@ -95,7 +105,7 @@ b {
     to {right:9vw}
 }
 
-.nav-item >a[href="#about"] {
+.nav-item >a[href="#courses"] {
     right: 9vw;
     animation-name: nav-item2;
     animation-duration: 0.5s;
