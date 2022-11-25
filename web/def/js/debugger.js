@@ -1,14 +1,14 @@
-let developement = false;
+let developement = true;
 
 function defs(developement) {
     let s=document.styleSheets;
     if(developement==true){
         console.log('Developer mode detected, enabling debugger.css');
-        s[1].disabled=false;
+        s[0].disabled=false;
     }
     else {
         console.log('User mode detected, disabling debugger.css');
-        s[1].disabled=true;
+        s[0].disabled=true;
     }
 };
 
@@ -16,5 +16,3 @@ function defs(developement) {
 
 defs(developement);
 console.info("Debugger loaded"); // Notify that func defs have loaded
-
-console.info("OVERRIDE: debugger.css hook removed since it doesn't work with netlify for some reason")

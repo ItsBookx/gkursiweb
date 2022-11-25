@@ -7,7 +7,6 @@
             "https://img.freepik.com/free-photo/school-classroom-blur-background-without-young-student-blurry-view-elementary-class-room-no-kid-teacher-with-chairs-tables-campus-vintage-effect-style-pictures_1253-1375.jpg?"
             );
 }
- 
 
 @keyframes idle{
     0%{
@@ -32,32 +31,23 @@
     }
 }
 
-b {
-    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-    color: var(--textcolor);
-    transition: 1s all;
-}
-
-img {
-    max-height: 5vmin;
-    max-width: 5vmin;
-    position: absolute;
-}
-
-.home {
-    border: 0px solid black;
-}
-
-.page-prop {
-    background-image: var(--pagebg);
-    background-size: cover;
-    margin: 0px;
-    padding: 0px;
+body {
     overflow: hidden;
     animation: idle 20s ease-in-out;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     transition: 0.5s all ease-in;
+    background-image: var(--pagebg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+b {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    color: var(--textcolor);
+    transition: 1s all;
 }
 
 .row {
@@ -121,63 +111,7 @@ img {
     animation-duration: 0.5s;
 }
 
-.content-container {
-    width: 100%;
-    height: 30vmin;
-    animation-name: navbg;
-    animation-duration: 0.5s;
-    transition: 1s all;
-}
-
-.title-container {
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    margin: auto;
-    transition: 1s all;
-}
-
-.title-container >b{
-    border: 2px solid var(--bordercolor);
-    background-color: var(--secondcolor);
-    padding: 15px;
-    border-radius: 5px;
-}
-
-.textbox-row {
-    display: flex;
-    transition: 1s all;
-}
-
-@keyframes textbox-in {
-    0% {width: 0%;}
-    100% {width: 50%;}
-} 
-
-.textbox-item {
-    border: 1px solid var(--bordercolor);
-    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-    height: 25vmin;
-    width: 50%;
-    margin: 5px;
-    background-color: var(--secondcolor);
-    padding-left: 5px;
-    border-radius: 2px;
-    animation-name: textbox-in;
-    animation-duration: 0.5s;
-    overflow-y: auto;
-    transition: 1s all;
-}
-
-.textbox-container {
-    border: 1px solid var(--bordercolor);
-    transition: 1s all;
-}
-
-.footer-container {
+/*.footer-container {
     margin-top: 50.3vh;
     height: 20vh;
     position: relative;
@@ -201,5 +135,4 @@ img {
 .footer-item >b{
     color: var(--secondcolor);
     transition: 1s all;
-}
-
+}*/
