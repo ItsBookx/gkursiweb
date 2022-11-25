@@ -16,3 +16,5 @@ function defs(developement) {
 
 defs(developement);
 console.info("Debugger loaded"); // Notify that func defs have loaded
+
+console.info("OVERRIDE: debugger.css hook removed since it doesn't work with netlify for some reason")
