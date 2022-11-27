@@ -1,0 +1,138 @@
+:root {
+    --bordercolor: #53687E;
+    --firstcolor: #b48289;
+    --secondcolor: #F5DDDD;
+    --textcolor: #6B4E71;
+    --pagebg: url(
+            "https://img.freepik.com/free-photo/school-classroom-blur-background-without-young-student-blurry-view-elementary-class-room-no-kid-teacher-with-chairs-tables-campus-vintage-effect-style-pictures_1253-1375.jpg?"
+            );
+}
+
+@keyframes idle{
+    0%{
+        --bordercolor: #53687E;
+        --firstcolor: #b48289;
+        --secondcolor: #F5DDDD;
+        --textcolor: #6B4E71;
+        --pagebg: url(
+            "https://img.freepik.com/free-photo/school-classroom-blur-background-without-young-student-blurry-view-elementary-class-room-no-kid-teacher-with-chairs-tables-campus-vintage-effect-style-pictures_1253-1375.jpg?"
+            );
+        transition: 1s all;
+    }
+    100% {
+        --bordercolor: #96897B;
+        --firstcolor: #CF995F;
+        --secondcolor: #DFD5A5;
+        --textcolor: #628395;
+        --pagebg: url(
+        "https://papers.co/wallpaper/papers.co-mm66-jungle-gym-city-dark-school-art-36-3840x2400-4k-wallpaper.jpg"
+        );
+        transition: 1s all;
+    }
+}
+
+body {
+    overflow: hidden;
+    animation: idle 20s ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transition: 0.5s all ease-in;
+    background-image: var(--pagebg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+b {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    color: var(--textcolor);
+    transition: 1s all;
+}
+
+.row {
+    display: flex;
+}
+
+@keyframes navbg{
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
+
+.nav {
+    background-color: var(--secondcolor);
+    width: 100%;
+    height: 4vmin;
+    transition: 1s all;
+    animation-name: navbg;
+    animation-duration: 0.5s;
+}
+
+.nav-item > a{
+    text-decoration: none;
+    color: var(--textcolor);
+    border: 1px solid var(--bordercolor);
+    padding: 0.4vmin;
+    position: absolute;
+    margin-top: 5px;
+    transition: 1s all;
+}
+
+@keyframes nav-item1 {
+    from {right: 100vmin;}
+    to {right:2vw}
+}
+
+.nav-item >a[href="index.html"] {
+    right: 2vw;
+    animation-name: nav-item1;
+    animation-duration: 0.5s;
+}
+
+@keyframes nav-item2 {
+    from {right: 100vmin;}
+    to {right:9vw}
+}
+
+.nav-item >a[href="courses.html"] {
+    right: 9vw;
+    animation-name: nav-item2;
+    animation-duration: 0.5s;
+}
+
+@keyframes nav-item3 {
+    from {right: 100vmin;}
+    to {right:16vw}
+}
+
+.nav-item >a[href="contact.html"] {
+    right: 16vw;
+    animation-name: nav-item3;
+    animation-duration: 0.5s;
+}
+
+/*.footer-container {
+    margin-top: 50.3vh;
+    height: 20vh;
+    position: relative;
+    background-color: var(--bordercolor);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    animation-name: navbg;
+    animation-duration: 0.5s;
+    transition: 1s all;
+}
+
+.footer-item {
+    color: var(--secondcolor);
+    width: 100%;
+    height: 100%;
+    margin-top: 7vmin;
+    transition: 1s all;
+}
+
+.footer-item >b{
+    color: var(--secondcolor);
+    transition: 1s all;
+}*/

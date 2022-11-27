@@ -1,0 +1,135 @@
+/*TODO: add a fixed footer css override (!important) for courses.html*/
+:root {
+    --bordercolor: #53687E;
+    --firstcolor: #b48289;
+    --secondcolor: #F5DDDD;
+    --textcolor: #6B4E71;
+    --blockbg: #F7A072;
+    --pagebg: url(
+            "https://img.freepik.com/free-photo/school-classroom-blur-background-without-young-student-blurry-view-elementary-class-room-no-kid-teacher-with-chairs-tables-campus-vintage-effect-style-pictures_1253-1375.jpg?"
+            );
+}
+
+@import url('https://fonts.cdnfonts.com/css/8bit-wonder');
+
+.title-container {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    color: black;
+    margin: auto;
+    transition: 1s all;
+    font-family: sans-serif;
+    -webkit-font-smoothing : none;
+}
+
+.title-container >b{
+    border: 2px solid var(--bordercolor);
+    background-color: var(--secondcolor);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.footer-container {
+    height: 30vh;
+    position: relative;
+    background-color: var(--bordercolor);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    animation-name: navbg;
+    animation-duration: 0.5s;
+    transition: 1s all;
+    width: 100%;
+}
+
+.footer-item {
+    color: var(--secondcolor);
+    width: 100%;
+    height: 100%;
+    margin-top: 7vmin;
+    transition: 1s all;
+}
+
+.footer-item >b{
+    color: var(--secondcolor);
+    transition: 1s all;
+}
+
+.block-row-long {
+    width: 100%;
+    height: 20vmin;
+    border: 2px solid var(--bordercolor);
+    border-radius: 10px;
+    background-color: var(--firstcolor);
+}
+
+.block-row-long-description {
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    padding-top: 5vmin;
+    align-items:center;
+    justify-content:center;
+    color: black;
+    margin: auto;
+    transition: 1s all;
+    font-family: sans-serif;
+    -webkit-font-smoothing : none;
+}
+
+.block-row-long-title {
+    padding-top: 10px;
+    text-decoration: underline;
+    text-decoration-color: var(--bordercolor);
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    -webkit-font-smoothing : none;
+}
+
+.block-row-short {
+    display: flex;
+}
+
+.block-item {
+    width: 50%;
+    height: 20vmin;
+    border: 2px solid var(--bordercolor);
+    border-radius: 10px;
+    background-color: var(--secondcolor);
+    opacity: 1;
+}
+
+.block-item-description {
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    padding-top: 5vmin;
+    align-items:center;
+    justify-content:center;
+    color: black;
+    margin: auto;
+    transition: 1s all;
+    font-family: sans-serif;
+    -webkit-font-smoothing : none;
+}
+
+.block-item-title {
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    padding-top: 5vmin;
+    align-items:center;
+    justify-content:center;
+    color: var(--textcolor);
+    margin: auto;
+    transition: 1s all;
+    font-family: sans-serif;
+    -webkit-font-smoothing : none;
+    text-decoration: underline;
+    text-decoration-color: var(--bordercolor);
+}
