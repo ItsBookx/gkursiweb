@@ -1,0 +1,99 @@
+:root {
+    --bordercolor: #53687E;
+    --firstcolor: #b48289;
+    --secondcolor: #F5DDDD;
+    --textcolor: #6B4E71;
+    --pagebg: url(
+            "https://img.freepik.com/free-photo/school-classroom-blur-background-without-young-student-blurry-view-elementary-class-room-no-kid-teacher-with-chairs-tables-campus-vintage-effect-style-pictures_1253-1375.jpg?"
+            );
+}
+
+.footer-container {
+    height: 20vh;
+    position: relative;
+    background-color: var(--bordercolor);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    animation-name: navbg;
+    animation-duration: 0.5s;
+    transition: 1s all;
+}
+
+.footer-item {
+    color: var(--secondcolor);
+    width: 100%;
+    height: 100%;
+    margin-top: 7vmin;
+    transition: 1s all;
+}
+
+.footer-item >b{
+    color: var(--secondcolor);
+    transition: 1s all;
+}
+
+.title-container {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    color: black;
+    margin: auto;
+    transition: 1s all;
+    font-family: sans-serif;
+    -webkit-font-smoothing : none;
+}
+
+.title-container >b{
+    border: 2px solid var(--bordercolor);
+    background-color: var(--secondcolor);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.data1 >a {
+    background-color: rgba(18, 18, 18, 0.68);
+    margin-left: 5px;
+}
+
+.contact-container {
+    display: flex;
+}
+
+.contact-index-0 {
+    font-family: sans-serif;
+}
+
+.msg {
+    color: darkred !important;
+    padding-left: 10px;
+}
+
+#name {
+    border-radius: 10px;
+    height: 30px;
+    font-size: 20px;
+    background-color: var(--secondcolor);
+    color: var(--textcolor) !important;
+}
+
+#email {
+    border-radius: 10px;
+    height: 30px;
+    font-size: 20px;
+    background-color: var(--secondcolor);
+    color: var(--textcolor) !important;
+}
+
+#message {
+    height: 200px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 600px;
+    background-color: var(--firstcolor);
+    color: var(--textcolor) !important;
+    opacity: 0.8;
+}
